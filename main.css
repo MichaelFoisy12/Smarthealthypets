@@ -1,0 +1,1621 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    padding: 35px 0;
+    display:flex;
+    background-color:#070707;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 1px;
+    width: 120px;
+    cursor: pointer;
+}
+.navbar a{
+  width: 150px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #f8f5f5;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #693333;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+/* Hovering over navbar options*/
+.navbar ul li:hover::after{
+    width: 100%;
+}
+
+.content {
+    width: 90%;
+    height: 58%;
+    padding: 12px 0;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    right: 3.7%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:#0f0f0f;
+}
+/* border-box */
+.adoptions-box{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    top: 40%;
+    background: rgb(255, 255, 255) ;
+    border: 3px rgb(0, 0, 0);
+}
+/* first adoption box */
+.first {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 7%;
+  left: 11%
+
+}
+/* first adoption box link */
+.first a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 2%;
+  top: 1%;
+  text-transform: uppercase;
+  
+}
+.first hone{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 7%;
+  top: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 30px ;
+}
+
+.second {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 7%;
+  left: 31%
+}
+.adoption-box .second a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 44%;
+  text-transform: uppercase;
+}
+.second htwo{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 18%;
+  top: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 40px ;
+}
+.third {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 7%;
+  left: 52%
+}
+.adoption-box .third a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 44%;
+  text-transform: uppercase;
+}
+.third hthree{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 20%;
+  top: 5%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 35px ;
+}
+.fourth {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 7%;
+  left: 72%
+}
+.adoption-box .fourth a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 44%;
+  text-transform: uppercase;
+}
+.fourth hfour{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 25%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 35px ;
+}
+
+.fifth {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 55%;
+  left: 11%
+}
+.adoption-box .fifth a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 24%;
+  text-transform: uppercase;
+}
+.fifth hfive{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 15%;
+  top:20%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 40px ;
+}
+.sixth {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 88%;
+  left: 29%
+}
+.adoption-box .sixth a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 24%;
+  text-transform: uppercase;
+}
+.sixth hsix{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 12%;
+  top: 15%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 40px ;
+}
+.seventh {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 55%;
+  left: 30%
+}
+.adoption-box .seventh a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 24%;
+  text-transform: uppercase;
+}
+.seventh hseven{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 18%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 29px ;
+}
+.eighth {
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 88%;
+  left: 51%
+}
+.adoption-box .eighth a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 24%;
+  text-transform: uppercase;
+}
+.eighth height{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 10%;
+  top: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 30px ;
+}
+.ninth{
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 55%;
+  left: 51%
+}
+.adoption-box .ninth a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 24%;
+  text-transform: uppercase;
+}
+.ninth hnine{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 3%;
+  top: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 28px ;
+}
+.tenth{
+  position: absolute;
+  height: 20%;
+  width:  10%;
+  background-color: #0c0c0c;
+  border-radius: 35%;
+  display: inline-block;
+  top: 55%;
+  left: 71%
+}
+.adoption-box .tenth a{
+  position: absolute;
+  width:100%;
+  height: 100%;
+  left: 16%;
+  top: 24%;
+  text-transform: uppercase;
+}
+.tenth hten{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 12%;
+  top: 40%;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:aqua;
+  font-size: 29px ;
+}
+
+.content h1{
+    position: absolute;
+    font-style: italic;
+    height:5%;
+    width:91%;
+    font-size: 80px;
+    margin-top: 80px;
+    left: 5%;
+    top: -20%;
+}
+.content p{
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+
+}
+
+
+.sectionTwo{
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  top: 150%;
+  background: rgb(255, 255, 255);
+  border: 3px rgb(0, 0, 0);
+}
+.sectionTwo h1{
+  position: absolute;
+  text-align: center;
+  font-style: italic;
+  height:5%;
+  width:91%;
+  font-size: 100px;
+  margin-top: 80px;
+  left: 1%;
+  top: 30%;
+}
+.sectionTwo h2{
+position: absolute;
+text-align: center;
+font-style: italic;
+height:5%;
+width:91%;
+font-size: 40px;
+margin-top: 100px;
+left: 1%;
+top: 63%;
+}
+.sectionTwo h3{
+position: absolute;
+text-align: center;
+font-style: italic;
+height:5%;
+width:91%;
+font-size: 40px;
+margin-top: 100px;
+left: 2%;
+top: 50%;
+}
+.sectionTwo a {
+position: absolute;
+
+width: 5%;
+height: 2%;
+left: -4%;
+top: 118%;
+
+color: aqua;
+text-align: center;
+font-size: 150%;
+
+}
+.sectionTwo a:hover{
+  color: black;
+}
+
+@media screen and (max-width: 660px){
+    .banner, .navbar, .content {
+        position: absolute;
+        width: 50%;
+    }
+    .navbar a{
+      width: 74%;
+      
+    }
+   
+    .content h1 /*.first,.second,.third,.fourth,.fifth,.sixth,.seventh,.eighth,.ninth,.tenth */{
+      position: absolute;
+      width: 50%;
+      font-size: 35px;
+      top: -30%;
+      left: 25%;
+      font-style: italic;
+      
+    }
+    .adoptions-box{
+      position: absolute;
+      width: 50%;
+    }
+    
+    .first{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: -9%;
+      left: 1%;
+    }
+    
+    
+    .first hone{
+      position: absolute;
+      font-size: 17px;
+      left: 9%;
+    }
+    
+    .second{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: -9%;
+      left: 60%;
+    }
+    .second htwo{
+      position: absolute;
+      font-size: 25px;
+      left: 15%;
+      top: 35%;
+    }
+    .third{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 10%;
+      left: 1%;
+    }
+    .third hthree{
+      position: absolute;
+      font-size: 13px;
+      left: 11%;
+      top: 20%;
+    }
+    .fourth{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 10%;
+      left: 60%;
+    }
+    .fourth hfour{
+      position: absolute;
+      font-size: 20px;
+      left: 14%;
+      top: 12%;
+    }
+    .fifth{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 30%;
+      left: 1%;
+    }
+    .fifth hfive{
+      position: absolute;
+      font-size: 16px;
+      left: 25%;
+      top: 6%;
+    }
+    .sixth{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 30%;
+      left: 60%;
+    }
+    .sixth hsix{
+      position: absolute;
+      font-size: 10px;
+      left: 8%;
+      top: 45%;
+    }
+    .seventh{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 50%;
+      left: 1%;
+    }
+    .seventh hseven{
+      position: absolute;
+      font-size: 10px;
+      left: 10%;
+      top: 34%;
+    }
+    .eighth {
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 50%;
+      left: 60%;
+    }
+    .eighth height{
+      position: absolute;
+      font-size: 20px;
+      left: 7%;
+      top: 35%;
+    }
+    .ninth{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top: 70%;
+      left: 1%;
+    }
+    .ninth hnine{
+      position: absolute;
+      font-size: 16px;
+      left: 5%;
+      top: 40%;
+    }
+    .tenth{
+      position: absolute;
+      width: 30%;
+      height: 10%;
+      top:70%;
+      left: 60%;
+    }
+    .tenth hten{
+      position: absolute;
+      font-size: 20px;
+      left: 3%;
+      top: 37%;
+    }
+  .sectionTwo h1{
+        position: absolute;
+        width: 100%;
+        top: -10%;
+        font-size: 84px;
+        left: 1%;
+    }
+  .sectionTwo h2{
+      position: absolute;
+      width: 100%;
+      top: 33%;
+  }
+  .sectionTwo h3{
+    position: absolute;
+    width: 100%;
+    top: 83%;
+    font-size: 30px;
+}
+  .sectionTwo a{
+    position: absolute;
+    width: 100%;
+    top: 130%;
+    left: 2%;
+}
+.sectionTwo h1{
+  position: absolute;
+  left: -3%;
+  top: -40%;
+  font-size: 70px;
+ 
+}
+.sectionTwo h2{
+  position: absolute;
+  width:50%;
+  left: 20%;
+  top: 10%;
+  font-size: 39px;
+}
+.sectionTwo h3{
+  position: absolute;
+  width:50%;
+  left: 20%;
+  font-size: 40px;
+  top: 65%;
+  
+}
+.sectionTwo a{
+  position: absolute;
+  width: 50%;
+  left: -1%;
+  top: 90%;
+}
+footer a{
+  position: absolute;
+  width: 1%;
+  left: 1%;
+}
+footer h4{
+  position: absolute;
+  width: 50%;
+  left: 15%;
+  top: 40%;
+}
+}
+
+
+ .navbar-park {
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    padding: 35px 0;
+    display:flex;
+    background-color:#070707;
+    align-items: center;
+    justify-content: space-between;
+
+}
+.logo{
+  height: 1px;
+  width: 120px; 
+  cursor: pointer;
+}
+.navbar-park a{
+  
+  width: 150px;
+}
+ .navbar-park ul li{
+    
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    right: 1.5%;
+}
+ 
+.navbar-park ul li a{
+    text-decoration: none;
+    color: #f8f5f5;
+    text-transform: uppercase;
+    
+}
+.navbar-park ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #693333;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+/* Hovering over navbar options*/
+ .navbar-park ul li:hover::after{
+    width: 100%;
+}
+
+ .text-box h1{
+  position: absolute;
+  display: block;
+  height: 5%;
+  left: 42%;
+  top: 8%;
+  font-size: 30px;
+}
+
+
+
+.content-park{
+  position:absolute;
+  display:contents;
+  justify-content: space-between;
+  width: 99%;
+  padding: 12px 0;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+
+}
+
+ .dot{
+  position: absolute;
+  height: 20%;
+  width:  20%;
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  display: inline-block;
+  top: 17%;
+  left: 12%;
+  
+}
+ .dot2{
+  height: 20%;
+  width:  20%;
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  position:absolute;
+  display: inline-block;
+  top: 40%;
+  left: 12%
+
+}
+.dot3{
+  height: 20%;
+  width:  20%; /* width:  175px; */
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  position:absolute;
+  display: inline-block;
+  top: 17%;
+  left: 62%
+}
+.dot4 {
+  height: 20%;
+  width:  20%;
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  position:absolute;
+  display: inline-block;
+  top: 65%;
+  left: 12%
+}
+ .dot5 {
+  height: 20%;
+  width:  20%;
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  position:absolute;
+  display: inline-block;
+  top: 40%;
+  left: 62%
+}
+
+ .dot6 {
+  height: 20%;
+  width:  20%;
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  position:absolute;
+  display: inline-block;
+  top: 65%;
+  left: 62%
+}
+ .dot7 {
+  height: 23%;
+  width:  23%;
+  background-color: #070707;
+  border: 3px solid #02f5c0;
+  border-inline-color: #f8f080;
+  border-radius: 50%;
+  position:absolute;
+  display: inline-block;
+  top: 85%;
+  left: 35%
+
+}
+
+
+
+
+
+ .contentrule1 a {
+  position:absolute;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  top: 23%;
+  left: 16%;
+  font-style: italic;
+  font-size: 30px;
+  color:white;
+}
+
+.contentrule2 a{
+  position:absolute;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  top: 45%;
+  left: 17%;
+  font-style: italic;
+  font-size: 30px;
+  color:white;
+}
+.contentrule3 a{
+  position:absolute;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  top: 22%;
+  left: 63%;
+  font-style: italic;
+  font-size: 30px;
+  color:white;
+}
+.contentrule4 a{
+  position:absolute;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  top: 71%;
+  left: 16%;
+  font-style: italic;
+  font-size: 30px;
+  color:white;
+}
+.contentrule5 a{
+  position:absolute;
+  
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  top: 47%;
+  left: 65%;
+  font-style: italic;
+  font-size: 30px;
+  color:white;
+}
+
+.contentrule6 a{
+  position:absolute;
+  margin: 35px 0;
+  font-weight: 100;
+  line-height: 25px;
+  top: 70%;
+  left: 64%;
+  font-style: bold italic;
+  font-size: 30px;
+  color:white;
+}
+
+.contentrule7 a{
+  position:absolute;
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+  top: 91%;
+  left: 38%;
+  font-style: italic;
+  font-size: 30px;
+  color:white;
+}
+
+
+ iframe{
+  position: absolute;
+  width: 98.9%;
+  height: 99%;
+  left: 0%;
+  top: 93%;
+}
+
+
+.navbar-h{
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  padding: 35px 0;
+  display:flex;
+  background-color:#070707;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+ .logo{
+    height: 1px;
+    width: 120px; /* 120px */
+    cursor: pointer;
+}
+.navbar-h a{
+  width: 150px;
+}
+.navbar-h ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+  right: 15.5%;
+}
+ .nav-navbar-right {
+
+  color:#fff;
+}
+.navbar-h ul li a{
+  text-decoration: none;
+  color: #f8f5f5;
+  text-transform: uppercase;
+  
+}
+.navbar-h ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #693333;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+/* Hovering over navbar options*/
+.navbar-h ul li:hover::after{
+  width: 100%;
+}
+/* Content-health */
+
+.content-health {
+  width: 90%;
+  height: 160%;
+  padding: 12px 0;
+  background: transparent;
+  position: absolute;
+  top: 100%;
+  right: 5%;
+  transform: translateY(-50%);
+  text-align: center;
+  color:#0f0f0f;
+ /* border: 6px solid rgb(82, 63, 1);  */
+ 
+}
+.content-health h1{
+  position: absolute;
+  display: block;
+  height: 5%;
+  left: 35%;
+  top: -4%;
+  font-size: 50px;
+}
+
+
+.contentdog   {
+  position: absolute;
+  background-color:rgb(4, 59, 59);
+  height: 25%;
+  width: 15%;
+  left: 25%;
+  top: 7%;
+  border-radius: 50px;
+  
+}
+
+
+hr { 
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 1px;
+  position: absolute;
+  left: 20%;
+  background-color: rgb(8, 8, 8);
+} 
+.contentdog hdog{
+  position: absolute;
+  font-size: 30px;
+  top: 2%;
+  left: 35%;
+  font-weight:bold;
+  color: white;
+}
+.dotdog{
+  background:transparent;
+  position: absolute;
+  height: 150px;
+  width:  150px;
+  left: 10%;
+  top: 30%;
+  background-color: #f70404;
+}
+.contentdog h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 14%;
+  left: 22%;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(211, 131, 12)
+  
+}
+
+
+
+
+.contentcat{
+  position: absolute;
+  background-color:rgb(4, 59, 59);
+  height: 42%;
+  width: 15%;
+  left: 53%;
+  top: 29%;
+  border-radius: 50px;
+}
+.contentcat hcat{
+  position: absolute;
+  font-size: 30px;
+  top: 2%;
+  left: 35%;
+  font-weight:bold;
+  color: white;
+}
+.contentcat h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(211, 131, 12)
+}
+
+
+.contentfish{
+  position: absolute;
+  background-color:rgb(4, 59, 59);
+  height: 42%;
+  width: 15%; /* 27% */
+  left: 19%;
+  top: 89%;
+  border-radius: 50px;
+
+}
+.contentfish hfish{
+  position: absolute;
+  font-size: 30px;
+  top: 2%;
+  left: 35%;
+  font-weight:bold;
+  color: white;
+}
+.contentfish h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(211, 131, 12)
+}
+
+
+
+.contentbird{
+  position: absolute;
+  background-color:rgb(4, 59, 59);
+  height: 43%;
+  width: 15%;
+  left: 53%;
+  top: 86%;
+  border-radius: 50px;
+}
+.contentbird hbird{
+  position: absolute;
+  font-size: 30px;
+  top: 3%;
+  left: 35%;
+  font-weight:bold;
+  color: white;
+}
+
+.contentbird h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(211, 131, 12)
+}
+
+.contenthamster{
+  position: absolute;
+  background-color:rgb(4, 59, 59);
+  height: 42%;
+  width: 15%;
+  left: 18%;
+  top: 148%;
+  border-radius: 50px;
+}
+.contenthamster hamster{
+  position: absolute;
+  font-size: 30px;
+  top: 3%;
+  left: 22%;
+  font-weight:bold;
+  color: white;
+}
+.contenthamster h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(211, 131, 12)
+}
+
+
+
+
+.contentrabbit{
+  position: absolute;
+  background-color:rgb(4, 59, 59);
+  height: 43%;
+  width: 15%;
+  left: 53%;
+  top: 148%;
+  border-radius: 50px;
+}
+.contentrabbit hrabbit{
+  position: absolute;
+  font-size: 30px;
+  top: 3%;
+  left: 28%;
+  font-weight:bold;
+  color: white;
+}
+.contentrabbit h2{
+  text-transform: uppercase;
+  position: absolute;
+  top: 13%;
+  left: 23%;
+  font-size: 10px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(211, 131, 12)
+}
+
+
+
+/* Header "Healthy Food and Treats*/
+.content-health h6{
+  text-transform: uppercase;
+  position: absolute;
+  top: -5%;
+  left: 34%;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(2, 70, 33)
+}
+
+
+
+
+
+
+.content-wellness h8{
+  text-transform: uppercase;
+  position: absolute;
+  top: -11%;
+  left: 19%;
+  font-size: 30px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color:rgb(0, 146, 151)
+}
+.dotOne {
+  position: absolute;
+  height: 50px;
+  width:  50px;
+  background-color: #fc8f01;
+  border: 3px solid #fc8f01;
+  border-radius: 50%;
+  display: inline-block;
+  top: 10%;
+  left: 32%
+}
+.dotOne hdot{
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  top: 10%;
+  
+}
+ .dotTwo {
+  position: absolute;
+  height: 50px;
+  width:  50px;
+  background-color: #fc8f01;
+  border: 3px solid #fc8f01;
+  border-radius: 50%;
+  display: inline-block;
+  top: 30%;
+  left: 32%
+}
+.dotTwo hdot2 {
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  
+  top: 10%;
+}
+ .dotThree {
+  position: absolute;
+  height: 50px;
+  width:  50px;
+  background-color: #fc8f01;
+  border: 3px solid #fc8f01;
+  border-radius: 50%;
+  display: inline-block;
+  top: 54%;
+  left: 32%
+}
+.dotThree hdot3{
+  position: absolute;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+
+  top: 10%;
+}
+ 
+.content-wellness hdot4{
+  position: absolute;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+
+
+@media (max-width: 600px){
+  .banner,.navbar, .navbar-park, .content,.content img,.content-park, /*footer, footer a,*/ .content-map, .iframe /* .dot, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7*/ {
+     position: absolute;
+     width: 50%;
+ }
+ .navbar ul li{
+  list-style: none;
+  display: inline-block;
+  margin:  12px 20px auto;
+  position: relative;
+  left: 10%;
+ 
+ }
+ .navbar-park ul li{
+  list-style: none;
+  display: inline-block;
+  margin:  12px 20px auto;
+  position: relative;
+  left: 10%;
+ 
+ }
+
+ .navbar-h ul li{
+  list-style: none;
+  display: inline-block;
+  margin:  12px 20px auto;
+  position: relative;
+  left: 10%;
+ }
+ .navbar-park a{
+  width: 74%;
+ }
+ .navbar-h a{
+  width: 74%;
+ }
+ .text-box h1{
+    position: absolute;
+    width:50%;
+    top: 11%;
+    left: 30%;
+    font-size: 20px;
+ }
+  
+    
+   .contentrule1 a{
+     font-size: 11px;
+     margin: -6px auto;
+     font-weight: 100%;
+     line-height: 20px;
+     width: 50%;
+   }
+   .contentrule2 a{
+    font-size: 11px;
+    margin: 3px auto;
+    font-weight: 100%;
+    line-height: 20px;
+    width: 50%;
+    left: 19%;
+  }
+  .contentrule3 a{
+    font-size: 11px;
+    margin: 3px auto;
+    font-weight: 100%;
+    line-height: 20px;
+    width: 50%;
+    left: 61%;
+  }
+  .contentrule4 a{
+    font-size: 11px;
+    margin: 0px auto;
+    font-weight: 100%;
+    line-height: 20px;
+    width: 50%;
+    left: 19%;
+  }
+  .contentrule5 a{
+    font-size: 11px;
+    margin: -5px auto;
+    font-weight: 100%;
+    line-height: 20px;
+    width: 50%;
+    left: 65%;
+  }
+  .contentrule6 a{
+    font-size: 11px;
+    margin: 7px auto;
+    font-weight: 100%;
+    line-height: 20px;
+    width: 50%;
+    left: 62%;
+  }
+  .contentrule7 a{
+    font-size: 11px;
+    margin: 5px auto;
+    font-weight: 100%;
+    line-height: 20px;
+    width: 50%;
+  }
+ 
+   .dot, .dot2, .dot3, .dot4, .dot5, .dot6 {
+     display: inline-block;
+     width: 30%;
+     height: 15%;
+   }
+   .dot7{
+     width:  35%;
+     height: 20%
+   }
+
+   .content-health h1{
+    position: absolute;
+    width:50%;
+    font-size: 26px;
+    
+    
+   }
+   .content-health{
+      width: 50%;
+   }
+   /*dog box */
+   .contentdog{
+      left: 5.5%;
+      width: 50%;
+   }
+   .contentdog p{
+    width:50%;
+    margin: 2px auto;
+    font-size: 4px;
+   }
+   .contentdog h2{
+    position: absolute;
+    font-size: 9px;
+    width: 50%;
+    top: 11%;
+    left: 26%;
+   }
+   .contentdog a{
+    position: absolute;
+    width: 50%;
+    left: 35%;
+   }
+   .contentdog hdog{
+    position: absolute;
+    font-size: 22px;
+   }
+   /*cat box*/
+  .contentcat{
+    left: 55%;
+    width: 40%;
+ }
+ .contentcat p{
+  width:50%;
+  margin: 2px auto;
+  font-size: 3.5px;
+  line-height: 12px;
+ }
+ .contentcat h2{
+  position: absolute;
+  font-size: 9px;
+  width: 50%;
+  top: 11%;
+  left: 33%;
+ }
+ .contentcat a{
+  position: absolute;
+  width: 50%;
+  left: 35%;
+ }
+ .contentcat hcat{
+  position: absolute;
+  font-size: 22px;
+ }
+   /*fishbox*/
+   .contentfish{
+    left: .5%;
+    width: 45%;
+ }
+ .contentfish p{
+  width:50%;
+  margin: 2px auto;
+  font-size: 4px;
+  line-height: 16px;
+ }
+ .contentfish h2{
+  position: absolute;
+  font-size: 9px;
+  width: 50%;
+  top: 11%;
+  left: 33%;
+ }
+ .contentfish a{
+  position: absolute;
+  width: 50%;
+  left: 27%;
+ }
+ .contentfish hfish{
+    position: absolute;
+    font-size: 22px;
+    
+ }
+    /*birdbox*/
+  .contentbird{
+    position: absolute;
+    left: 50%;
+    width: 45%;
+    top: 88%;
+   }
+   .contentbird p{
+    width:50%;
+    margin: 2px auto;
+    font-size: 2px;
+    line-height: 12px;
+   }
+   .contentbird h2{
+    position: absolute;
+    font-size: 9px;
+    width: 50%;
+    top: 11%;
+    left: 33%;
+   }
+   .contentbird a{
+    position: absolute;
+    width: 50%;
+    left: 35%;
+   }
+   .contentbird hbird{
+    position: absolute;
+    font-size: 22px;
+   }
+     /*hamsterbox*/
+  .contenthamster{
+    position: absolute;
+    left: .5%;
+    width: 45%;
+    top: 150%;
+   }
+   .contenthamster p{
+    width:50%;
+    margin: 2px auto;
+    font-size: 2px;
+    line-height: 12px;
+   }
+   .contenthamster h2{
+    position: absolute;
+    font-size: 9px;
+    width: 50%;
+    top: 11%;
+    left: 33%;
+   }
+   .contenthamster a{
+    position: absolute;
+    width: 50%;
+    left: 32%;
+    
+   }
+   .contenthamster hamster{
+    position: absolute;
+    font-size: 22px;
+    left: 19%;
+   }
+     /*rabbitbox*/
+  .contentrabbit{
+    position: absolute;
+    left: 50%;
+    width: 45%;
+    top: 150%;
+   }
+   .contentrabbit p{
+    width:50%;
+    margin: 2px auto;
+    font-size: 4px;
+   }
+   .contentrabbit h2{
+    position: absolute;
+    font-size: 9px;
+    width: 50%;
+    top: 11%;
+    left: 33%;
+   }
+   .contentrabbit a{
+    position: absolute;
+    width: 50%;
+    left: 32%;
+    
+   }
+   .contentrabbit hrabbit{
+    position: absolute;
+    font-size: 22px;
+    left: 29%;
+   }
+  /* Wellness section*/
+ .content-wellness {
+  position: absolute;
+  width: 50%;
+  left: .5%;
+}
+  .dotOne, .dotTwo, .dotThree{
+    position: absolute;
+    width: 10%;
+    left: 30%;
+  }
+  .dotOne hdot{
+    position: absolute;
+    width: 50%;
+    font-size: 20px;
+    left: 60%;
+    top: 30%;
+   }
+   .dotTwo hdot2{
+    position: absolute;
+    width: 50%;
+    font-size: 20px;
+    left: 60%;
+    top: 30%;
+   }
+   .dotThree hdot3{
+    position: absolute;
+    width: 50%;
+    font-size: 20px;
+    left: 60%;
+    top: 30%;
+   }
+   .content-wellness hdot4{
+    position: absolute;
+    width: 50%;
+    font-size: 7px;
+    left: 30%;
+    top: 30%;
+   }
+  footer {
+    position: absolute;
+    width: 30%;
+    left:0%;
+    top: 1%;
+  }
+  footer h4{
+    position: absolute;
+    width: 50%;
+    left: 20%;
+  }
+}

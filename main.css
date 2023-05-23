@@ -652,7 +652,7 @@ footer h4{
 }
 
 /* smaller screens */
-@media (min-width: 320px){
+@media (max-width: 320px){
 
   .content h1 /*.first,.second,.third,.fourth,.fifth,.sixth,.seventh,.eighth,.ninth,.tenth */{
     position: absolute;
@@ -1697,7 +1697,7 @@ hr {
 }
 
 /* smaller screens */
-@media (min-width: 320px){
+@media (max-width: 320px){
        
  
 

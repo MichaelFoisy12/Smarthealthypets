@@ -1634,8 +1634,9 @@ hr {
     font-size: 7px;
     width: 50%;
     top: 12%;
-    left: 20%;
+    left: 30%;
     line-height: 10px;
+    text-align: start;
    }
    .contentdog a{
     position: absolute;
@@ -1658,7 +1659,7 @@ hr {
   width:50%;
   margin: 2px auto;
   font-size: 12px;
-  line-height: 20px;
+  line-height: 19px;
   top: 20%;
  }
  .contentcat h2{
@@ -1724,7 +1725,7 @@ hr {
     width:50%;
     margin: 2px auto;
     font-size: 11px;
-    line-height: 17px;
+    line-height: 16px;
     top: 19%;
    }
    .contentbird h2{

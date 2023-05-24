@@ -1693,6 +1693,7 @@ hr {
   font-size: 11px;
   line-height: 20px;
   top: 20%;
+  left: 1%;
  }
  .contentfish h2{
   position: absolute;
@@ -1759,7 +1760,7 @@ hr {
     width:50%;
     margin: 2px auto;
     font-size: 11px;
-    line-height: 20px;
+    line-height: 19px;
     top: 19%;
    }
    .contenthamster h2{

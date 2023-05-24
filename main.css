@@ -446,7 +446,7 @@ font-size: 150%;
     .content h1 /*.first,.second,.third,.fourth,.fifth,.sixth,.seventh,.eighth,.ninth,.tenth */{
       position: absolute;
       width: 50%;
-      font-size: 30px;
+      font-size: 29px;
       top: -30%;
       left: 25%;
       font-style: italic;
@@ -527,7 +527,7 @@ font-size: 150%;
       position: absolute;
       font-size: 15px;
       left: 0%;
-      top: 5%;
+      top: 2%;
       text-align: center;
     }
     .sixth{
@@ -541,7 +541,7 @@ font-size: 150%;
       position: absolute;
       font-size: 16px;
       left: 0%;
-      top: 19%;
+      top: 15%;
       text-align: center;
       
     }
@@ -556,7 +556,7 @@ font-size: 150%;
       position: absolute;
       font-size: 12px;
       left: 0%;
-      top: 25%;
+      top: 16%;
       text-align: center;
     }
     .eighth {

@@ -452,7 +452,7 @@ font-size: 150%;
         width: 50%;
     }
     .navbar a{
-      width: 56%;
+      width: 56.4%;
       
     }
    
@@ -543,7 +543,7 @@ font-size: 150%;
       left: 0%;
       top: 2%;
       text-align: center;
-      line-height: 19px;
+      line-height: 17.5px;
     }
     .sixth{
       position: absolute;
@@ -1513,10 +1513,10 @@ hr {
   left: 10%;
  }
  .navbar-park a{
-  width: 56%;
+  width: 56.4%;
  }
  .navbar-h a{
-  width: 56%;
+  width: 56.4%;
  }
  .text-box h1{
     position: absolute;

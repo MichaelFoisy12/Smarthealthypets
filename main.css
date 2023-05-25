@@ -508,10 +508,11 @@ font-size: 150%;
     }
     .third hthree{
       position: absolute;
-      font-size: 13px;
+      font-size: 10.5px;
       left: 0%;
-      top: 13%;
+      top: 28%;
       text-align: center;
+      line-height: 15px;
     }
     .fourth{
       position: absolute;
@@ -536,10 +537,11 @@ font-size: 150%;
     }
     .fifth hfive{
       position: absolute;
-      font-size: 14px;
+      font-size: 14.5px;
       left: 0%;
       top: 2%;
       text-align: center;
+      line-height: 17px;
     }
     .sixth{
       position: absolute;
@@ -565,10 +567,11 @@ font-size: 150%;
     }
     .seventh hseven{
       position: absolute;
-      font-size: 11px;
+      font-size: 10.5px;
       left: 0%;
-      top: 16%;
+      top: 20%;
       text-align: center;
+      line-height: 16px;
     }
     .eighth {
       position: absolute;
@@ -608,10 +611,11 @@ font-size: 150%;
     }
     .tenth hten{
       position: absolute;
-      font-size: 17px;
+      font-size: 18px;
       left: 0%;
-      top: 20%;
+      top: 33%;
       text-align: center;
+      line-height: 13px;
     }
     .sectionTwo h1{
       position: absolute;

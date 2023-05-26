@@ -24,6 +24,33 @@
     </div>
 </div>
 </div>
+    <div class="popup-card" >
+      <button id="close-btn">
+        <span class="material-symbols-rounded close-icon"> I Understand</span> 
+      </button>
+      <div class="content-popup">
+        <h3>Important!</h3>
+        <p>Please follow the links and read articles before giving your pets any of the listed foods.
+           Your pets may have allergies, it's important to speak to your vet before giving your pets any food.
+
+        </p>
+      </div>
+     </div>
+     <script>
+      let popup = document.getElementsByClassName("popup-card")[0];
+      let closeBtn = document.getElementById("close-btn");
+
+      function showPopup(){
+        setTimeout(() =>{
+          popup.style.transform = "translateY(0)";
+        }, 50);
+      }
+      closeBtn.addEventListener("click",(e) => {
+        popup.style.transform = "translateY(-70vh)";
+      });
+      window.onload = showPopup();
+     </script>
+
      <div class="content-health" style="width:100%;">
         <h1> Food&Treats</h1>
         
@@ -371,12 +398,16 @@
           left: 90%;
           color: rgb(255, 255, 255);
           top: 26%;
-
         }
-       
-
+         footer p a{
+          position: absolute;
+          left: 3%;
+          top: 33%;
+          font-size: 30px;
+        }     
       </style> 
      <a href="#top" style="text-decoration: none;">▲</a>
+     <p><a href="mailto:Smarthealthypetsinfo@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope"></i></a></p>
      <h4>&copy;  2023 Smarthealthypets.com</h4>
      </footer>
     </body>

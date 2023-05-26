@@ -686,10 +686,13 @@ font-size: 150%;
     left: 15%;
     top: 40%;
 }
+footer p a{
+  position: absolute;
+  left: 4.5%;
+  top: 65%;
+
 }
-
-
-
+}
 
 
  .navbar-park {
@@ -1000,8 +1003,75 @@ font-size: 150%;
 .navbar-h ul li:hover::after{
   width: 100%;
 }
-/* Content-health */
+/* popup window */
+.popup-card {
+  width: 22rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background-color: #fffb00;
+  border-radius: 0.2rem;
+  padding: 2rem 1.5rem;
+  position: fixed;
+  left: 34%;
+  top: 7.5%;
+  transition: all 0.8s ease;
+  transform: translateY(-70vh);
+  z-index: 999;
+}
 
+
+.icon {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFDDDE;
+  color: #e66215;
+  border-radius: 1%;
+}
+
+.content-popup > h3 {
+  position: absolute;
+  top: 1%;
+  left: 30%;
+  font-size: 34px;
+  color: #000000;
+}
+
+.content-popup > p {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2rem;
+  color: #000000;
+  margin-top: 0.5rem;
+}
+
+button {
+  width: 20%;
+  height: 1.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background-color: #1eff00;
+  cursor: pointer;
+  border: none;
+  border-radius: 14%;
+  position: absolute;
+  left: 38%;
+  top: 85%;
+}
+
+.close-icon {
+  font-size: 13px;
+}
+
+
+
+/* Content-health */
 .content-health {
   width: 90%;
   height: 160%;
@@ -1880,113 +1950,10 @@ hr {
     width: 50%;
     left: 20%;
   }
-}
-
-/* smaller screens 
-@media (min-width: 320px){
-       
- 
-
-  .contentdog h2{
+  footer p a{
     position: absolute;
-    font-size: 7px;
-    width: 50%;
-    top: 12%;
-    left: 28%;
-  }
+    left: 4.5%;
+    top: 65%;
   
-  .contentcat hcat{
-    position: absolute;
-    left: 29%;
   }
-  .contentfish h2{
-    position: absolute;
-    font-size: 7px;
-    width: 50%;
-    top: 12%;
-    left: 35%;
-  }
-  .contentbird h2{
-    position: absolute;
-    font-size: 7px;
-    width: 50%;
-    top: 12%;
-    left: 32%;
-  }
-  .contenthamster hamster{
-    position: absolute;
-    font-size: 17px;
-  }
-  .contentrabbit hrabbit{
-    position: absolute;
-    font-size: 17px;
-  }
-  .text-box h1{
-    position: absolute;
-    width:50%;
-    top: 12%;
-    left: 28%;
-    font-size: 18px;
- }
- .contentrule1 a{
-  font-size: 11px;
-  margin: -6px auto;
-  font-weight: 100%;
-  line-height: 20px;
-  width: 50%;
 }
-.contentrule2 a{
- font-size: 11px;
- margin: 3px auto;
- font-weight: 100%;
- line-height: 20px;
- width: 50%;
- left: 19%;
-}
-.contentrule3 a{
- font-size: 10px;
- margin: 3px auto;
- font-weight: 100%;
- line-height: 20px;
- width: 50%;
- left: 59%;
- top: 21%;
-}
-.contentrule4 a{
- font-size: 11px;
- margin: 0px auto;
- font-weight: 100%;
- line-height: 20px;
- width: 50%;
- left: 17%;
- top: 70%;
-}
-.contentrule5 a{
- font-size: 11px;
- margin: -5px auto;
- font-weight: 100%;
- line-height: 20px;
- width: 50%;
- left: 64%;
-}
-.contentrule6 a{
- font-size: 11px;
- margin: 7px auto;
- font-weight: 100%;
- line-height: 20px;
- width: 50%;
- left: 59%;
- top: 69%;
-}
-.contentrule7 a{
- font-size: 9px;
- margin: 5px auto;
- font-weight: 100%;
- line-height: 20px;
- width: 50%;
- top: 90%;
- left: 38%;
-}
-
-}
-*/

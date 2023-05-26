@@ -1684,12 +1684,20 @@ hr {
     width:50%;
     font-size: 26px;
     top: -1%;
-    left: 30%;
-    
-    
+    left: 30%; 
    }
    .content-health{
       width: 50%;
+   }
+    .popup-card{
+    position: fixed;
+    left: 1%;
+    width: 85%;
+    overflow: hidden;
+    top: 12%;
+   }
+   .close-icon{
+    font-size: 11px;
    }
    /*dog box */
    .contentdog{

@@ -1691,7 +1691,7 @@ hr {
    }
     .popup-card{
     position: fixed;
-    left: -2%;
+    left: 0%;
     width: 85%;
     overflow: hidden;
     top: 12%;

@@ -2,137 +2,573 @@
 <html lang="en">
 
 <head>
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Smarthealthypets</title>
-     <link rel="stylesheet" type="text/css" href="main.css">
-     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-     
-    </head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0", shrink-to-fit="no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/3a76c17a28.js" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <title>Smarthealthypets</title>
+</head>
+
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    
+}
+header{
+    z-index: 999;
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 200px;
+    transition: 0.5s ease;
+    overflow: hidden;
+     background-color: #000; 
+}
+header img{
+    position: absolute;
+    left: 0;
+    width: 200px;
+    height: 100px;
+    cursor: pointer;
+}
+
+header .navigation{
+    position: relative;
+}
+header .navigation .navigation-items a{
+    position: relative;
+    color: #fff;
+    font-size: 1em;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 30px;
+    transition: 0.3s ease;
+    left: 0; 
+}
+header .navigation .navigation-items a:before{
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before{
+    width: 100%;
+}
+.rules{
+    position: relative;
+    width: 100%;
+    min-height: 122vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #ffffff;
+}
+.rules h1{
+    position: relative;
+    font-size: 3em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    line-height: 55px;
+    margin-bottom: 600px;
+    text-align: center;
+    left: 0%;
+    color: #000000;
+}
+.rules .container-rules{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 907px;
+    width: 100%;
+    left:0;
+    top: 20%;
+    border: 4px solid transparent;
+    border-radius: 11px;
+    
+}
+.rules .container-rules a{
+    font-size: 1em;
+    font-weight: 400;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    
+}
+.rules .container-rules > div{
+    display: inline-flex;
+    position: relative;
+    height: 200px;
+    width: 200px;
+    flex-direction: row;
+    transition: 0.5 ease;
+    border: 3px solid #02f5c0;
+    border-radius: 50%;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.5);
+    padding: 50px;
+    margin-top: 100px;
+    margin-right: 270px;
+    left: 5%;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center; 
+    background-color: #222;
+}
+ .rules .container-rules > div:nth-child(8){
+    padding: 1px;
+    
+} 
+.map{
+    width: 100%;
+    height: 75%;
+    padding: 12px 0;
+    background: transparent;
+    position: absolute;
+    top: 170%;
+    transform: translateY(-60%);
+    text-align: center;
+    
+    
+}
+.map > iframe{
+    z-index: 000;
+    position: absolute;
+    top:9%;  /*  58.9%; */
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+}
+footer {
+position: absolute;
+width: 100%;
+text-align: center;
+padding: 2rem 0;
+background-color: rgb(0, 0, 0);
+color: #000;
+top: 210.1%;
+}
+/* copyright */
+h4{ 
+position: relative;
+height: 15%;
+font-size: 1em;
+font-weight: 40px;
+position:absolute;
+left: 43%;
+color: rgb(255, 255, 255);
+/* top: 75%; */ 
+margin-top: 13px;
+
+}
+footer a{
+border: 1px solid;
+border-style: none;
+border-radius: 4%;
+height: 12%;
+font-size: 27px;
+position:absolute;
+left: 90%;
+color: rgb(255, 255, 255);
+top: 26%;
+}
+footer p a{
+position: absolute;
+left: 3%;
+top: 33%;
+font-size: 30px;
+} 
+
+@media (max-width: 1040px){
+    header {
+        padding: 12px 20px;
+        background-color: transparent;
+    }
+    section {
+        padding: 100px 10px;
+    }
+    header .navigation {
+       display: inline;
+       margin-left: 40px;
+       width: 100%;
+       right:auto;
+       justify-content: auto;
+       align-items: center;
+    }
+    header .logo{
+        position: absolute;
+        margin-right: auto;
+        width: 90px;
+        height: auto;  
+        
+    }
+    header .navigation {
+       display: none;
+    }
+    header .navigation.active {
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .navigation .navigation-items a{
+        color: #222;
+        font-size: 1.2em;
+        margin: 20px;
+    }
+    header .navigation .navigation-items a:before{
+        background: #222;
+        height: 5px;
+    }
+    header .navigation.active .navigation-items{
+        background: #fff;
+        width: 600px;
+        max-width: 600px;
+        margin: 20px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 0 5px 25px rgb(1 1 1 / 20%);
+    }
+    .rules{
+        flex-direction: column;
+        
+    }
+    .rules h1{
+        font-size: 1em;
+        font-weight: 900;
+        text-align: center;
+        margin-top: -240px;
+        left: 3%;
+        
+    }
+    .rules .container-rules{
+        display: flex;
+        flex-wrap: wrap;
+        width: auto;
+        left: 0;
+        /* margin-top: -90px; */
+        margin-bottom: -14px;
+        
+        
+    }
+    .rules .container-rules > div{
+        margin: auto;
+        align-items: center;
+        justify-content: space-evenly;
+        font-size: 0.7em;
+        width: 35%;
+        height: 21%;
+        top: -9%;
+        margin-bottom: auto;
+        
+    }
+    .menuIcon {
+        cursor: pointer;
+        display: block;
+        position: fixed;
+        right: 15px;
+        top: 10px;
+        height: 23px;
+        width: 27px;
+        z-index: 12;
+      }
+      
+     .map  {
+        overflow: hidden;
+        width: 102%;
+      }  
+      .map > iframe  {
+        overflow: hidden;
+        height: 91.3%;
+      }  
+      
+    
+      /* Icon Bars */
+      .icon-bars {
+        background: rgb(255,215,0);
+        position: absolute;
+        left: 1px;
+        top: 45%;
+        height: 2px;
+        width: 20px;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      } 
+    
+      .icon-bars::before {
+        background: rgb(13, 26, 38);
+        content: '';
+        position: absolute;
+        left: 0;
+        top: -8px;
+        height: 2px;
+        width: 20px;
+    /*     -webkit-transition: top 0.2s ease 0.3s;
+        transition: top 0.2s ease 0.3s; */
+        -webkit-transition: 0.3s width 0.4s;
+        transition: 0.3s width 0.4s;
+      }
+    
+      .icon-bars::after {
+        margin-top: 0px;
+        background: rgb(255,215,0);
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -8px;
+        height: 2px;
+        width: 20px;
+    /*     -webkit-transition: top 0.2s ease 0.3s;
+        transition: top 0.2s ease 0.3s; */
+        -webkit-transition: 0.3s width 0.4s;
+        transition: 0.3s width 0.4s;
+      }
+    
+      /* Bars Shadows */
+      .icon-bars.overlay {
+        background: rgb(97, 114, 129);
+        background: rgb(183, 199, 211);
+        width: 20px;
+        animation: middleBar 3s infinite 0.5s;
+        -webkit-animation: middleBar 3s infinite 0.5s;
+      } @keyframes middleBar {
+          0% {width: 0px}
+          50% {width: 20px}
+          100% {width: 0px}
+        } @-webkit-keyframes middleBar {
+            0% {width: 0px}
+            50% {width: 20px}
+            100% {width: 0px}
+          }
+    
+      .icon-bars.overlay::before {
+        background: rgb(255,215,0);
+        background: rgb(255,215,0);
+        width: 10px;
+        animation: topBar 3s infinite 0.2s;
+        -webkit-animation: topBar 3s infinite 0s;
+      } @keyframes topBar {
+          0% {width: 0px}
+          50% {width: 10px}
+          100% {width: 0px}
+        } @-webkit-keyframes topBar {
+            0% {width: 0px}
+            50% {width: 10px}
+            100% {width: 0px}
+          }
+    
+      .icon-bars.overlay::after {
+        background: rgb(97, 114, 129);
+        background: rgb(183, 199, 211);
+        width: 15px;
+        animation: bottomBar 3s infinite 1s;
+        -webkit-animation: bottomBar 3s infinite 1s;
+      } @keyframes bottomBar {
+          0% {width: 0px}
+          50% {width: 15px}
+          100% {width: 0px}
+        } @-webkit-keyframes bottomBar {
+            0% {width: 0px}
+            50% {width: 15px}
+            100% {width: 0px}
+          }
+    
+      /* Toggle Menu Icon */
+      .menuIcon.toggle .icon-bars {
+        top: 5px;
+        transform: translate3d(0, 5px, 0) rotate(135deg);
+        transition-delay: 0.1s;
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    
+      .menuIcon.toggle .icon-bars::before {
+        top: 0;
+        transition-delay: 0.1s;
+        opacity: 0;
+      }
+    
+      .menuIcon.toggle .icon-bars::after {
+        top: 10px;
+        transform: translate3d(0, -10px, 0) rotate(-270deg);
+        transition-delay: 0.1s;
+        transition: transform 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      }
+    
+      .menuIcon.toggle .icon-bars.overlay {
+        width: 20px;
+        opacity: 0;
+        -webkit-transition: all 0s ease 0s;
+        transition: all 0s ease 0s;
+      }
+    footer{
+        position: absolute;
+        overflow: hidden;
+        width: 102%;
+   }
+   
+    footer a{
+        font-size: 1em;
+        font-weight: 900;
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        line-height: 40px;
+        margin-bottom: auto;
+        
+    }
+    footer h4{
+        position: absolute;
+        font-size: 0.7em;
+        line-height: 25px;
+        width: 50%;
+        left: 25%;
+        margin-bottom: auto;
+        
+    }
+    footer p a{
+        position: absolute;
+        left: 4.5%;
+        margin-bottom: auto;
+
+        }
+}
+</style>
 
     <body> 
      
-        <div class="navbar-park" style="width:100%;">
-            <a href="index.html">
-               <img border="0" alt="Smarthealthypets" src="smarthealthypetslogo1.webp" style="width:100%;" >
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="parks.html">Parks</a></li>
-                <li><a href="./health&wellness.html">Health&Wellness</a></li>
-                <li><a href="#"></a></li>
-            </ul>
-            </a>
-    </div>
+        <header>
+        
+            <img href="parks.html" class="logo"  alt="Smarthealthypets" src="smarthealthypetslogo1.webp" >
+             <div class="menuIcon">
+                <span class="icon icon-bars"></span>
+                <span class="icon icon-bars overlay"></span>
+              </div> 
+            <div class="navigation">
+                <div class="navigation-items">
+                    <a href="./index.html">Home</a>
+                    <a href="./parks.html">Parks</a> 
+                    <a href="./health&wellness.html">Health&Wellness</a>
+                </div>
+            </div>
+        </header>
 
         
-        <div class="text-box" style="width:100%;">
+        <section class="rules">
             <h1>Dog Park Etiquette</h1>
-            </div>
             
-            <div class="content-park" style="width:100%;">
-             <div class="contentrule1">
-                <span class="dot"></span>
-                <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Pick up after <br> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;your pets</a>
+            <div class="container-rules">
+             <div class="content" >
+                <p>Pick up after your pets</p>
              </div>
 
-             <div class="contentrule2">
-                <span class="dot2"></span>
-                <a>Up-to date on<br>vaccinations</a>
+             <div class="content">
+                <p>Up-to date on vaccinations</p>
              </div>
 
-             <div class="contentrule3">
-                <span class="dot3"></span>
-                <a>&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Dogs in heat,<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;should be left home</a>
+             <div class="content">
+                <p> Dogs in heat, should be left home</p>
              </div>
 
-             <div class="contentrule4">
-                <span class="dot4"></span>
-                <a>Don't bring food<br> &nbsp;&nbsp;into the park</a>
+             <div class="content">
+                <p>Don't bring food into the park</p>
              </div>
 
-             <div class="contentrule5">
-                <span class="dot5"></span>
-                <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;No little kids</a>
+             <div class="content">
+                <p>Leave little kids at home</p>
              </div>
 
-             <div class="contentrule6" >
-                <span class="dot6"></span>
-                <a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Keep your leash<a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;with you</a>
-             </div>
-
-             <div class="contentrule7">  
-                <span class="dot7"></span>
-                <a>You may bring your own<br>(tennis balls or Frisbees®),<br> no competing should take<br>place</a>
+             <div class="content" >
+                <p>Keep your leash with you</p>
              </div>
              
+             <div class="content">  
+                <p>Bring water and a bowl</p>
              </div>
+
+             <div class="content">  
+                <p>Avoid the 3 Ps: packing, possession, provoking</p>
+             </div>
+             
+             
+             </div>
+        </section>
             
-       <div class="content-map" style="width:100%;">
-        <style>
-         .content-map  {
-            width: 70%;
-            height: 75%;
-            padding: 12px 0;
-            background: transparent;
-            position: absolute;
-            top: 90%;
-            transform: translateY(-50%);
-            text-align: center;
-            }
-        </style>
-        <iframe
-         
-         style="position: absolute;"
-         style="width:100%;"
+       <section class="map" id="map" >
+        <iframe 
          referrerpolicy="no-referrer-when-downgrade"
          src="https://www.google.com/maps/d/u/0/embed?mid=1d9d0XveXqcmuoKy6XCHnDRtkEkYsoqE&ehbc=2E312F" style="width:100%"style="height:100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       
        </iframe>
       </div>
-
-        <footer> 
-         <style>
-         footer {
-              position: absolute;
-              width: 99.9%;
-              text-align: center;
-              padding: 2rem 0;
-              background-color: rgb(0, 0, 0);
-              color: white;
-              top: 220%;
-        }
-        /* copyright */
-        h4{
-          
-          height: 15%;
-          font-size: 15px;
-          position:absolute;
-          left: 40.2%;
-          color: rgb(255, 255, 255);
-          top: 65%;
-
-        }
-        footer a{
-          border: 1px solid;
-          border-style: none;
-          border-radius: 4%;
-
-          height: 12%;
-          font-size: 27px;
-          position:absolute;
-          left: 90%;
-          color: rgb(255, 255, 255);
-          top: 26%;
-        }
-        footer p a{
-          position: absolute;
-          left: 3%;
-          top: 33%;
-          font-size: 30px;
-        }
-         </style> 
-        <a href="#top" style="text-decoration: none;">▲</a>
-        <p><a href="mailto:Smarthealthypetsinfo@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope"></i></a></p>
-        <h4>&copy;  2023 Smarthealthypets.com</h4>
-</footer>
+      </section>
+      <script type="text/javascript">
+        // Javascript of responsive navigation menu
+        //Responsive Toggle Navigation =============================================
+        let menuIcon = document.querySelector('.menuIcon');
+        let nav = document.querySelector('.overlay-menu');
+        const navigation = document.querySelector(".navigation");
+       // const navItems = document.querySelector(".navigation-items");
+        
+        menuIcon.addEventListener('click', () => {
+            menuIcon.classList.toggle("active");
+            navigation.classList.toggle("active");
+          if (nav.style.transform != 'translateX(0%)') {
+              nav.style.transform = 'translateX(0%)';
+              nav.style.transition = 'transform 0.2s ease-out';
+          } else { 
+              nav.style.transform = 'translateX(-100%)';
+              nav.style.transition = 'transform 0.2s ease-out';
+          }
+        });
+        
+        
+        // Toggle Menu Icon ========================================
+        let toggleIcon = document.querySelector('.menuIcon');
+        
+        toggleIcon.addEventListener('click', () => {
+            
+          if (toggleIcon.className != 'menuIcon toggle') {
+              toggleIcon.className += ' toggle';
+          } else {
+              toggleIcon.className = 'menuIcon';
+          }
+        });
+</script>
+      
+      <footer> 
+         <a href="#top" style="text-decoration: none;">▲</a>
+         <p><a href="mailto:Smarthealthypetsinfo@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope"></i></a></p>
+        <h4> &copy;  2023 Smarthealthypets.com</h4>
 </body>
 </html>
